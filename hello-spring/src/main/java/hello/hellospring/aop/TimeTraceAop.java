@@ -6,7 +6,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;
 
 @Aspect
-@Component
+@Component //이렇게 해줘도 되고 springConfig에서 해줘도 됨
 public class TimeTraceAop {
 
     @Around("execution(* hello.hellospring..*(..))")
